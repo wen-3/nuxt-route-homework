@@ -23,8 +23,8 @@ const roomImages = computed(() => {
   const result = rooms.reduce((acc, roomId) => {
     acc[`room${roomId.toUpperCase()}`] = nums.reduce((obj, num) => {
       obj[num] = {
-        desktop: importImage(`../assets/images/room-${roomId}-${num}.png`),
-        mobile: importImage(`../assets/images/room-${roomId}-sm-${num}.png`)
+        desktop: importImage(`@/assets/images/room-${roomId}-${num}.png`),
+        mobile: importImage(`@/assets/images/room-${roomId}-sm-${num}.png`)
       };
       return obj;
     }, {});
@@ -173,7 +173,7 @@ const roomImages = computed(() => {
                     </p>
                     <NuxtLink
                       :to="{
-                        name: 'room-detail',
+                        name: 'rooms-roomId',
                         params: {
                           roomId: 'a'
                         }
@@ -269,7 +269,7 @@ const roomImages = computed(() => {
                     </p>
                     <NuxtLink
                       :to="{
-                        name: 'room-detail',
+                        name: 'rooms-roomId',
                         params: {
                           roomId: 'b'
                         }
@@ -365,7 +365,7 @@ const roomImages = computed(() => {
                     </p>
                     <NuxtLink
                       :to="{
-                        name: 'room-detail',
+                        name: 'rooms-roomId',
                         params: {
                           roomId: 'c'
                         }
@@ -461,7 +461,7 @@ const roomImages = computed(() => {
                     </p>
                     <NuxtLink
                       :to="{
-                        name: 'room-detail',
+                        name: 'rooms-roomId',
                         params: {
                           roomId: 'd'
                         }

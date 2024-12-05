@@ -1,6 +1,6 @@
 <script setup>
-import DatePickerModal from '@/components/rooms/DatePickerModal.vue';
 import { Icon } from '@iconify/vue';
+import DatePickerModal from '~/components/rooms/DatePickerModal.vue';
 
 const datePickerModal = ref(null);
 
@@ -535,7 +535,7 @@ const handleDateChange = (bookingInfo) => {
                 NT$ 10,000
               </h5>
               <NuxtLink
-                :to="{ name: 'booking', params: { roomId: $route.params.roomId } }"
+                :to="{ name: 'rooms-roomId-booking', params: { roomId: $route.params.roomId } }"
                 class="btn btn-primary-100 py-4 text-neutral-0 fw-bold rounded-3"
               >
                 立即預訂
@@ -563,7 +563,7 @@ const handleDateChange = (bookingInfo) => {
             <span class="text-neutral fs-9 fw-medium text-decoration-underline">{{ daysFormatOnMobile(bookingDate.date?.start) }} - {{ daysFormatOnMobile(bookingDate.date?.end) }}</span>
           </div>
           <NuxtLink
-            :to="{ name: 'booking', params: { roomId: $route.params.roomId } }"
+            :to="{ name: 'rooms-roomId-booking', params: { roomId: $route.params.roomId } }"
             class="btn btn-primary-100 px-12 py-4 text-neutral-0 fw-bold rounded-3"
           >
             立即預訂

@@ -1,8 +1,10 @@
-<script setup lang="ts">
+<script setup>
 </script>
 
 <template>
-  <NuxtLayout>
+  <NuxtLayout name="user">
     <NuxtPage />
   </NuxtLayout>
 </template>
+
+<style></style>

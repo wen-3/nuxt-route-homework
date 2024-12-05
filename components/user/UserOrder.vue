@@ -268,7 +268,7 @@ const roomId = 'a';  // for navigation demo
           </button>
           <NuxtLink
             :to="{
-              name: 'room-detail',
+              name: 'rooms-roomId',
               params: {
                 roomId
               }

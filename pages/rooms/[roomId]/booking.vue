@@ -1,6 +1,4 @@
 <script setup>
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
 import BookingLoading from '@/components/rooms/BookingLoading.vue';
 import { Icon } from '@iconify/vue';
 
@@ -17,7 +15,7 @@ const confirmBooking = () => {
   setTimeout(() => {
     isLoading.value = false;
     router.push({
-      name: 'booking-confirmation',
+      name: 'booking-confirmation-bookingId',
       params: {
         bookingId: 'HH2302183151222'
       }

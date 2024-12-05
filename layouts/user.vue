@@ -36,7 +36,7 @@
           <li class="nav-item position-relative">
             <NuxtLink
               :to="{
-                name: 'user-profile',
+                name: 'user-userId-profile',
                 params: {
                   userId: $route.params.userId
                 }
@@ -50,7 +50,7 @@
           <li class="nav-item position-relative">
             <NuxtLink
               :to="{
-                name: 'user-order',
+                name: 'user-userId-order',
                 params: {
                   userId: $route.params.userId
                 }
@@ -63,7 +63,7 @@
           </li>
         </ul>
         
-        <NuxtPage />
+        <slot />
       </div>
     </section>
 

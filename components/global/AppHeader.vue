@@ -100,13 +100,13 @@ onUnmounted(() => {
                   <li>
                     <a
                       class="dropdown-item px-6 py-4"
-                      href="#"
+                      href="/user/Jessica"
                     >我的帳戶</a>
                   </li>
                   <li>
                     <a
                       class="dropdown-item px-6 py-4"
-                      href="#"
+                      href="/account"
                     >登出</a>
                   </li>
                 </ul>
@@ -114,7 +114,7 @@ onUnmounted(() => {
             </li>
             <li class="d-md-none nav-item">
               <NuxtLink
-                to="/"
+                to="/account"
                 class="nav-link p-4 text-neutral-0"
               >
                 會員登入
