@@ -65,18 +65,19 @@
           忘記密碼？
         </button>
       </div>
-      <button
+      <NuxtLink
         class="btn btn-primary-100 w-100 py-4 text-neutral-0 fw-bold"
-        type="button"
-      >
-        會員登入
-      </button>
+        :to="{
+          name: 'user-userId-profile',
+          params: { userId: 'Jessica' } 
+        }"
+      >會員登入</NuxtLink>
     </form>
 
     <p class="mb-0 fs-8 fs-md-7">
       <span class="me-2 text-neutral-0 fw-medium">沒有會員嗎？</span>
       <NuxtLink
-        to="signup"
+        to="account/signup"
         class="text-primary-100 fw-bold text-decoration-underline bg-transparent border-0"
       >
         <span>前往註冊</span>
