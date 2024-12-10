@@ -54,7 +54,7 @@ const handleDateChange = (bookingInfo) => {
           <div style="width: 52.5vw;">
             <img
               class="w-100"
-              src="@/assets/images/room-a-1.png"
+              src="/images/room-a-1.png"
               alt="room-a-1"
             >
           </div>
@@ -65,24 +65,24 @@ const handleDateChange = (bookingInfo) => {
             <div class="d-flex gap-md-2">
               <img
                 class="w-50"
-                src="@/assets/images/room-a-2.png"
+                src="/images/room-a-2.png"
                 alt="room-a-2"
               >
               <img
                 class="w-50"
-                src="@/assets/images/room-a-3.png"
+                src="/images/room-a-3.png"
                 alt="room-a-3"
               >
             </div>
             <div class="d-flex gap-md-2">
               <img
                 class="w-50"
-                src="@/assets/images/room-a-4.png"
+                src="/images/room-a-4.png"
                 alt="room-a-4"
               >
               <img
                 class="w-50"
-                src="@/assets/images/room-a-5.png"
+                src="/images/room-a-5.png"
                 alt="room-a-5"
               >
             </div>
@@ -99,7 +99,7 @@ const handleDateChange = (bookingInfo) => {
       <div class="d-md-none position-relative">
         <img
           class="img-fluid"
-          src="@/assets/images/room-a-1.png"
+          src="/images/room-a-1.png"
           alt="room-a-1"
         >
         <button
